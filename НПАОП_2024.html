@@ -100,6 +100,12 @@
             line-height: 140%;
         }
 
+        @media (max-width: 660px) {
+            .question__head {
+                min-height: 30px;
+            }
+        }
+
         .question__group {
             min-height: 50px;
             margin-bottom: 20px;
@@ -672,12 +678,12 @@
 
             function countErrors() {
                 errors++
-                lightsElementsArr[errors-1].style.cssText = `background-color: #82280c; box-shadow:none;`
+                lightsElementsArr[errors - 1].style.cssText = `background-color: #82280c; box-shadow:none;`
 
             }
 
             function reloadPage() {
-                if(errors == 3) {
+                if (errors == 3) {
                     alert("Число попыток исчерпано. Попробуйте снова.")
                     location.reload()
                 }
