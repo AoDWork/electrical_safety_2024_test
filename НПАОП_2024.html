@@ -907,6 +907,7 @@
                 currentId = Math.floor(Math.random() * (max - min + 1)) + min
                 currentQuestion = data[currentId]
                 buildQuestion(currentQuestion)
+                checkEndOfDb(answersDB)
             }
 
             function setNumberOfQuestion(data) {
